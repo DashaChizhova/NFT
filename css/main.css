@@ -9,6 +9,7 @@ body, a {
     font-style: normal;
     font-weight: 400;
     line-height: 20px; 
+    color: black;
 }
 
 a {
@@ -34,8 +35,8 @@ a {
     line-height: 28px; 
 }
 .nav__btn {
-    border-radius: 8px;
-    background: #EA4C89;
+    border-radius: 11px;
+    background: #000000;
     padding: 12px 16px;
     color: #FFF;
 }
@@ -90,11 +91,11 @@ a {
     margin-top: 46px;
 }
 .header__form-input {
-    border-radius: 50px;
+    border-radius: 18px;
     background: #F3F3F4;
-    padding: 0px 56px;
-    height: 58px;
-    width: 600px;
+    padding: 12px 16px;
+    /* height: 58px;
+    width: 600px; */
     border: 1px solid #F3F3F4;
 }
 .header__tag {
@@ -129,6 +130,7 @@ input[type=search]::placeholder {
 
 .proect {
     padding-top: 100px;
+    background-color: #efefef;
 }
 .proect__item {
     margin-bottom: 36px;
