@@ -56,6 +56,10 @@ a {
     font-weight: bold;
     color: #000000;
 }
+input[type=email]::placeholder, input[type=password]::placeholder, input[type=text]::placeholder, input[type=tel]::placeholder {
+    color: #000000;
+  
+}
 
 /* ========================================================HEADER===================================================== */
 
@@ -116,8 +120,6 @@ input[type=search]::placeholder {
     color: #9E9EA7;
     line-height: normal;
     font-size: 10px;
-    
-
 }
 .k__ul{
     margin-top: 40px;
@@ -342,65 +344,86 @@ font-weight: 500;
 }
 
 .form {
-    padding: 60px 0px;
+    padding: 160px 0px;
 }
-.form__shadow {
-    
-}
+
 .form__block {
+    text-align: center;
     padding: 100px 45px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
 }
 .form__title {
     color: #0D0C22;
-    font-size: 24px;
-    line-height: 30px; 
-    font-weight: 700;
-    margin-bottom: 10px;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 750;
+    line-height: 40px;
+    margin-bottom: 80px;
 }
 .form__subtitle {
-    color: #3D3D4E;
+    color: #9596A6;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
 }
 .form__input {
-    height: 56px;
-    border-radius: 8px;
-    border: 1px solid #E1E1E6;
+    height: 59px;
+    border-radius: 4px;
+    border: 2px solid #ffffff;
     padding: 0px 16px;
     color: #9E9EA7;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 85%;
+    margin-bottom: 30px;
     box-sizing: border-box;
+    box-shadow: 2px 2px 21px -5px rgb(149, 149, 149);
 }
+
 .form__btn {
     border-radius: 8px;
-    background: #EA4C89;
-    border: 1px solid #EA4C89;
-    height: 46px;
+    background: #000000;
+    border: 1px solid #000000;
+    height: 59px;
     padding: 0px 26px;
-    margin-top: 10px;
+    margin-top: 40px;
     color: #FFF;
+    width: 85%;
+    box-shadow: 2px 2px 21px -5px rgb(149, 149, 149);
 }
 .form__polit {
-    color: #6E6D7A;
+    color: #9596A6;
     font-size: 12px;
     font-style: italic;
     line-height: 16px;
     margin-top: 20px;
 }
 .form__image-reg {
-    background: url('../img/reg.jpg') no-repeat center;
-    background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 .form__image-aut {
-    background: url('../img/aut.jpg') no-repeat left;
-    background-size: cover;
+    background-color: #000000;
+    text-align: center;
+    padding-top: 70px;
+    box-shadow: 2px 12px 21px -5px rgb(149, 149, 149);
+    
 }
-
-
+.aut__img{
+    width: 250px;
+    height: 270px;
+    box-shadow: 0px 25px 79px -7px rgb(216 198 170);
+    border-radius: 6%;
+    margin-bottom: 70px;
+}
+.main__aut__title{
+    color: white;
+    margin-bottom: 0;
+}
+.aut__subtitle{
+    color: #6D6D6D;
+    margin-top: 15px;
+}
 .article {
     margin-top: 71px;
 }
