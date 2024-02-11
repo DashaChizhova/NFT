@@ -60,6 +60,9 @@ input[type=email]::placeholder, input[type=password]::placeholder, input[type=te
     color: #000000;
   
 }
+.warning_message{
+    display: block;
+}
 
 /* ========================================================HEADER===================================================== */
 

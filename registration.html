@@ -23,11 +23,12 @@
                 <h2 class="form__title">Welcome!</h2>
                 <!-- <p class="form__subtitle">Register to make full use of our resource.</p> -->
 
-                <form enctype="multipart/form-data" method="post" action="include/reg.php">
+                <form enctype="" method="" action="">
                 <div><input class="form__input" type="text" name="login" placeholder="Login" id=""></div>
                     <div><input class="form__input" type="text" name="name" placeholder="Name" id=""></div>
                     <div><input class="form__input" type="tel" name="phone" placeholder="Phone" id=""></div>
-                    <div><input class="form__input" type="email" name="email" placeholder="Email" id=""></div>
+                    <div class="warning_message"><span class="warning_message_text">Поле обязательно для заполнения</span></div>
+                    <div><input class="form__input" type="email" name="email" placeholder="Email" id="emailInput"></div>
                     <div><input class="form__input" type="password" name="password" placeholder="Password" id=""></div>
                     <div><input class="form__input" type="password" name="repeat_password" placeholder="Repeat at password" id=""></div>
                     <div><input class="form__input" type="file" name="avatar" placeholder="Your photo" id=""></div>
@@ -59,5 +60,6 @@
 
 
     <script src="js/pages.js"></script>
+   
 </body>
 </html>
