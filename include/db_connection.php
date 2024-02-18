@@ -1,4 +1,12 @@
 <?php
+<<<<<<< HEAD
+=======
+// Параметры подключения к базе данных
+$host = 'localhost';
+$dbname = 'NFT';
+$user = 'root';
+$password = '';
+>>>>>>> ac1bad7be0af508c6ea957d0c113ef67a137750e
 
 class Database 
 {
