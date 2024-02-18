@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/setka.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/setka.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -42,8 +42,8 @@
                 </div>
 
                 <div class="header__utp header__imgs">
-                  <img class="header__img header__img1" src="/img/pie.png" alt="nft">
-                  <img class="header__img header__img2" src="/img/sun.png" alt="nft">
+                  <img class="header__img header__img1" src="img/pie.png" alt="nft">
+                  <img class="header__img header__img2" src="img/sun.png" alt="nft">
                  
                  
                     <div class="arrow">
@@ -63,12 +63,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 project__item">
-                    <a href="#" class="project__border"><img class="project__img" src="/img/mountains.png" alt=""></a>
+                    <a href="#" class="project__border"><img class="project__img" src="img/mountains.png" alt=""></a>
                         <h2 class="project__title">Sun-Glass</h2>
                         <br>
                         <h3 class="project__category" >Current bid</h3>
                         <div class="project__price" >
-                            <img class="project__logo" src="/img/currency.png" alt=""> 
+                            <img class="project__logo" src="img/currency.png" alt=""> 
                             <h2 class="">1.75</h2>
                         </div> 
                         <a href="#" class="nav__btn project__btn">Place Bid</a> 
@@ -89,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-3 project__item">
-                    <a href="#" class="project__border"><img class="project__img" src="/img/mountains.png" alt=""></a>
+                    <a href="#" class="project__border"><img class="project__img" src="img/mountains.png" alt=""></a>
                         <h2 class="project__title">Sun-Glass</h2>
                         <br>
                         <h3 class="project__category" >Current bid</h3>

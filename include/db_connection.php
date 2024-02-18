@@ -2,7 +2,7 @@
 // Параметры подключения к базе данных
 $host = 'localhost';
 $dbname = 'NFT';
-$user = 'Dasha';
+$user = 'root';
 $password = '';
 
 try {
