@@ -1,19 +1,44 @@
 <?php
-// Параметры подключения к базе данных
-$host = 'localhost';
-$dbname = 'NFT';
-$user = 'Dasha';
-$password = '';
 
-try {
-    // Создаем объект PDO для подключения к базе данных
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
-    
-    // Устанавливаем режим обработки ошибок для PDO
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-    echo "Подключение к базе данных успешно установлено";
-} catch (PDOException $e) {
-    die("Ошибка подключения к базе данных: " . $e->getMessage());
+class Database 
+{
+    private $host = "localhost";
+    private $username = "root";
+    private $password = "";
+    private $database = "nft";
+    private $connection;
+
+    public function __construct() {
+        $this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+
+        if ($this->connection->connect_error) {
+            die("Connection failed: " . $this->connection->connect_error);
+        }
+    }
+
+    public function getConnection() {
+        return $this->connection;
+    }
+
+    public function closeConnection() {
+        $this->connection->close();
+    }
+
+    public function insertUser($login, $username, $phone, $email, $password, $role) {
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        $sql = "INSERT INTO `user` (`login`, `username`, `phone`, `email`, `password`, `role`) VALUES ('$login', '$username', '$phone', '$email', '$password', '$role')";
+
+        if ($this->connection->query($sql) === TRUE) {
+            echo "New record created successfully";
+        } else {
+            echo "Error: " . $sql . "<br>" . $this->connection->error;
+        }
+    }
 }
+
+$db = new Database();
+$connection = $db->getConnection();
+
+
 ?>
+
